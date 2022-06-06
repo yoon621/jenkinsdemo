@@ -4,25 +4,10 @@ pipeline {
     }
 
     stages {
-        stage('Build') {
+        stage('Hello') {
             steps {
-                echo 'Building..'
+                echo 'Hello HONGIK'
             }
-        }
-        stage('Test') {
-            steps {
-                build 'seleniummaven'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
-    post {
-        always {
-            echo "202206060236"
         }
     }
 }
